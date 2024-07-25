@@ -25,7 +25,7 @@
             <input disabled placeholder="Password" class="display" data-passwordDisplay>
 
             <button data-copy id="btn">
-                <span data-copyMsg></span>
+                <span id="copyMsg" data-copyMsg></span>
                 <img src="./images/copy.svg" alt="copy" width="23" height="23">
             </button>
 
@@ -36,7 +36,7 @@
 
             <!--password length section-->
             <div id="length-div" class="length-container">
-                <p>Password Length</p>
+                <p id="lengthTxt">Password Length</p>
                 <p data-lengthNumber class="length-number">0</p>
             </div>
 
@@ -44,22 +44,22 @@
             <input type="range" min="1" max="20" class="slider" step="1" placeholder="Password" data-lengthSlider>
 
             <!-- checkboxes-->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Includes Uppercase letters</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase">Includes Lowercase letters</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="numbers">
                 <label for="numbers">Includes Numbers </label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
                 <label for="symbols">Includes Symbols </label>
             </div>
